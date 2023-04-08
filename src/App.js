@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Amazon from "./components/amazon";
 import Navbar from "./components/navbar";
 import Cart from "./components/cart";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -33,7 +34,9 @@ const App = () => {
       ) : (
         <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
+      <Footer/>
     </React.Fragment>
+    
   );
 };
 

@@ -14,6 +14,7 @@
   }
   .cart_img {
     display: flex;
+    /* height: 4000px; */
     width: 400px;
   }
   
