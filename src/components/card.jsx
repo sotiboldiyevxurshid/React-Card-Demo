@@ -7,6 +7,8 @@ const Cards = ({ item, handleClick }) => {
   const { title,  text,price,img,classa} = item
 
   const { t } = useTranslation();
+
+
   
   return (
     <>

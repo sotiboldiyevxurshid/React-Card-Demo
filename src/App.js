@@ -3,6 +3,12 @@ import Amazon from "./components/amazon";
 import Navbar from "./components/navbar";
 import Cart from "./components/cart";
 import Footer from "./components/Footer";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CreateData from "./companents/CreateData/CreateData";
+import Home from "./companents/Home/Home";
+import NavbarRouter from "./companents/Navbar/NavbarRouter";
+import EditPage from "./EditPage/EditPage";
+import TableList from "./TableList/TableList";
 
 const App = () => {
   const [show, setShow] = useState(true);
@@ -27,6 +33,19 @@ const App = () => {
   // }, [cart]);
 
   return (
+    <>
+
+<Router>
+  <NavbarRouter/>
+    <Routes>
+      <Route path="/home" element={<Home/>} />
+      <Route path="/create" element={<CreateData/>} />
+      <Route path="/table" element={<TableList/>} />
+      <Route path="/table/edit/:id" element={<EditPage/>} />
+
+    </Routes>
+  </Router>
+    
     <React.Fragment>
       <Navbar setShow={setShow} size={cart.length} />
       {show ? (
@@ -38,6 +57,7 @@ const App = () => {
       
       <Footer />
     </React.Fragment>
+    </>
   );
 };
 
