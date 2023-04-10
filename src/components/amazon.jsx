@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import list from "../data";
 import Cards from "./card";
 import "../styles/amazon.css";
 import { Container, Row } from "react-bootstrap";
-import { useState } from "react";
-
 
 const Amazon = ({ handleClick }) => {
 
