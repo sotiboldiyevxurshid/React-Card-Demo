@@ -1,7 +1,7 @@
 const list = [
   {
     id: 1,
-    title: "Сальваторе пицца",
+    title: "sa",
     text: " Соус томатный,",
     price: 89,
     amount:1,
