@@ -9,26 +9,30 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import { useTranslation } from "react-i18next";
 
 
 export default function Footer() {
+
+  const { t } = useTranslation();
+
     const footer = [
         {
           id: 1,
-          footer1: "Новости",
+          footer1: `${t("text.footer_1")}`,
           footer_icon: <FeedIcon />,
           cl:"footer_class"
         },
         {
           id: 2,
-          footer1: "Вакансии",
+          footer1: `${t("text.footer_2")}`,
           footer_icon: <AttachMoneyIcon />,
           cl:"footer_class"
     
         },
         {
           id: 3,
-          footer1: "Контакты",
+          footer1: `${t("text.footer_3")}`,
           footer_icon: <ContactMailIcon />,
           cl:"footer_class"
     
@@ -38,21 +42,21 @@ export default function Footer() {
       const footer1 = [
         {
           id: 1,
-          footer1: "Правовые документы",
+          footer1: `${t("text.footer_4")}`,
           footer_icon: <DocumentScannerIcon />,
           cl:"footer_class"
     
         },
         {
           id: 2,
-          footer1: "Франшиза",
+          footer1: `${t("text.footer_5")}`,
           footer_icon: <BusinessCenterIcon />,
           cl:"footer_class"
     
         },
         {
           id: 3,
-          footer1: "Калорийность и состав",
+          footer1: `${t("text.footer_6")}`,
           footer_icon: <LocalDiningIcon />,
           cl:"footer_class"
     
@@ -84,14 +88,15 @@ export default function Footer() {
           </Col>
        
 
-          <Col xs={4}>
+          <Col md={4} xs={12}>
             <img className="footer_img"  src="https://www.qrstuff.com/images/default_qrcode.png" alt="" />
           </Col>
 
           <Col>
-          <p  className="footer_p">Для заказов:</p>
+    <div className="footerxurshid">
+    <p  className="footer_p">{t("text.footer_li1")}</p>
           <p className="footer_tel">8 (8553) 40-20-12</p>
-          <p className="footer_p">Контроль качества:</p>
+          <p className="footer_p">{t("text.footer_li2")}</p>
           <p className="footer_tel">8 (8553) 40-20-11</p>
           <p className="footer_p">пн-чт   пт-сб  вс
 </p>
@@ -102,6 +107,7 @@ export default function Footer() {
             <TelegramIcon  className="footer_salom_1_2"/>
           </div>
 
+    </div>
           </Col>
         </Row>
       </Container>

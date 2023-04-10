@@ -45,3 +45,11 @@
     background-color: skyblue;
     outline: none;
   }
+
+  @media (max-width:575px) {
+    .section{
+      grid-template-columns: repeat(1, 1fr);
+      flex-wrap: wrap;
+    }
+    
+  }

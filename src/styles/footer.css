@@ -2,11 +2,13 @@
     display: flex;
     gap:5px;
     color: green;
+    margin-top: 30px;
   
 }
 
 .footer_class{
     color: grey;
+
 }
 
 .footer_btn{
@@ -67,4 +69,18 @@ color: green;
 
 .footer_salom_1_2:hover{
     color: green;
+    }
+
+    @media (max-width:575px) {
+
+        .footer_div{
+            justify-content: center;
+        }
+        .footer_img{
+margin-left: 100px;
+        }
+
+        .footerxurshid{
+            margin-left: 100px;
+        }
     }

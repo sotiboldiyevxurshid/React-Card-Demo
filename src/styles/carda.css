@@ -113,3 +113,19 @@
         border-radius: 10px;
         border: 1px solid green;
     }
+    @media (max-width:575px) {
+        .classname2{
+            margin-top: 600px;
+            margin-left: -343px;
+        }
+
+        .classname3{
+            margin-top: 1200px;
+            margin-left: -367px;
+        }
+
+        .classname4{
+            margin-top: 1800px;
+            margin-left: -394px;
+        }
+    }
