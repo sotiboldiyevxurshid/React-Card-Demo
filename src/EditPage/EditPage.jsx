@@ -30,7 +30,7 @@ const EditPage = () => {
   
 useEffect(() => {
     getOne(id)
-}, [])
+})
 
 const editData = () => {
   let obj = {
