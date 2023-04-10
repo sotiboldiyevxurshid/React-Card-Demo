@@ -1,7 +1,7 @@
 const list = [
   {
     id: 1,
-    title: "sa",
+    title: "chizburger",
     text: " Соус томатный,",
     price: 89,
     amount:1,
@@ -10,7 +10,7 @@ const list = [
   },
   {
     id: 2,
-    title: "Сальваторе пицца",
+    title: "gamburger",
     text: " Соус томатный,",
     price: 89,
     amount:1,
@@ -20,7 +20,7 @@ const list = [
   },
   {
     id: 3,
-    title: "Сальваторе пицца",
+    title: "xot-dog",
     text: " Соус томатный,",
     price: 89,
     amount:1,
@@ -30,7 +30,7 @@ const list = [
   },
   {
     id: 4,
-    title: "Сальваторе пицца",
+    title: "lavash",
     text: " Соус томатный,",
     price: 89,
     amount:1,

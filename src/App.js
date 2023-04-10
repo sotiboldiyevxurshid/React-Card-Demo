@@ -34,6 +34,8 @@ const App = () => {
       ) : (
         <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
       )}
+
+      
       <Footer />
     </React.Fragment>
   );

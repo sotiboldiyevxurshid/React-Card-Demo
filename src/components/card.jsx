@@ -19,7 +19,7 @@ const Cards = ({ item, handleClick }) => {
             <Card className="mt-5" style={{ width: "20rem" }}>
               <Card.Img variant="top" src={img} />
               <Card.Body>
-                <Card.Title className="card_section1">{title}{t("text.card_1")}</Card.Title>
+                <Card.Title className="card_section1">{title}</Card.Title>
                 <Card.Text className="card_section">{text}</Card.Text>
                 <div className="div_section">
                   <h6 className="salom">26 {t("text.card_3")}</h6>

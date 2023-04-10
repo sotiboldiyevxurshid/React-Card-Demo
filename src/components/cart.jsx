@@ -1,9 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "../styles/cart.css";
+import axios from "axios";
 
 const Cart = ({ cart, setCart, handleChange }) => {
 
   const [price, setPrice] = useState(0);
+
+  const[rows,setRows] = useState()
+
+  console.log(rows);
+
+
+
+  const getAllData = () => {
+    let url = "http://localhost:5000/data"
+    axios.get(url).then((data) => {
+      setRows(data?.data)
+   
+    })
+  }
+
+  useEffect(() => {
+    getAllData()
+  },[])
 
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);

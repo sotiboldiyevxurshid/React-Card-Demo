@@ -74,7 +74,7 @@ color: green;
     @media (max-width:575px) {
 
         .footer_div{
-            justify-content: center;
+          margin-left: 100px;
         }
         .footer_img{
 margin-left: 100px;
