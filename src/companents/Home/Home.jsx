@@ -1,14 +1,11 @@
-import React from 'react'
-import Amazon from '../../components/amazon'
-import Cart from '../../components/cart'
-import { useState } from 'react'
-import Footer from '../../components/Footer'
-import Navbar from '../../components/navbar'
-
+import React from "react";
+import Amazon from "../../components/amazon";
+import Cart from "../../components/cart";
+import { useState } from "react";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/navbar";
 
 const Home = () => {
-
-
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
@@ -29,18 +26,17 @@ const Home = () => {
   return (
     <>
       <React.Fragment>
-      <Navbar setShow={setShow} size={cart.length} />
-      {show ? (
-        <Amazon handleClick={handleClick} />
-      ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-      )}
+        <Navbar setShow={setShow} size={cart.length} />
+        {show ? (
+          <Amazon handleClick={handleClick} />
+        ) : (
+          <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+        )}
 
-      
-      <Footer />
-    </React.Fragment>
+        <Footer />
+      </React.Fragment>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
