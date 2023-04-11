@@ -1,11 +1,10 @@
 import React from 'react'
-
 import Amazon from '../../components/amazon'
 import Cart from '../../components/cart'
 import { useState } from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/navbar'
-// import Sonnet from '../../components/Sonnet';
+
 
 const Home = () => {
 
