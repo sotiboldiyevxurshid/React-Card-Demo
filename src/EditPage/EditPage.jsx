@@ -16,7 +16,7 @@ const EditPage = () => {
 
     const getOne = (id) => {
       
-        axios.get(`http://localhost:5000/data/${id}`).then((data) => {
+        axios.get(`https://serverkerak.onrender.com/data/${id}`).then((data) => {
             alert(data.statusText)
             setName(data.data.name)
             setText(data.data.text)
