@@ -40,7 +40,7 @@ const editData = () => {
     amount:amount,
     image:image
   }
-axios.put(`http://localhost:5000/data/${id}`, obj).then((res) =>  {
+axios.put(`xurshidbek-server.netlify.app${id}`, obj).then((res) =>  {
   alert(res.statusText)
   navigate('/table')
 })}
