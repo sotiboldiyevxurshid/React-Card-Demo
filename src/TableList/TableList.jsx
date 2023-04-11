@@ -13,7 +13,7 @@ const TableList = () => {
   const[input,setInput] = useState("")
 
   const getAllData = () => {
-    let url = "http://localhost:5000/data"
+    let url = "https://serverkerak.onrender.com/data"
     axios.get(url).then((data) => {
       setRows(data?.data)
    
@@ -22,7 +22,7 @@ const TableList = () => {
 
 
   const deleteFunc = (id) => {
-    axios.delete(`http://localhost:5000/data/${id}`).then((res) =>{
+    axios.delete(`https://serverkerak.onrender.com/data/${id}`).then((res) =>{
        alert(res.statusText)
   })
     // rows.filter(id)
